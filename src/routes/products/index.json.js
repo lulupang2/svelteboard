@@ -1,4 +1,4 @@
-import { initDB } from '@lib/mysql';
+import { initDB } from './mysql';
 
 export function get(req, res) {
     const { db } = initDB();
