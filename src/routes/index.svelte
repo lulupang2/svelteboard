@@ -30,15 +30,15 @@
 
     {#each products as board}
       <div class="boardlist">
-        <div class="row boardcon">{board.num}</div>
-        <div class="row boardcon">{board.subject}</div>
-        <div class="row boardcon">{board.content}</div>
-        <div class="row boardcon">{board.name}</div>
-        <div class="row boardcon">{board.views}</div>
-        <div class="row boardcon">{board.wdate}</div>
-        <div class="row boardcon">{board.passwd}</div>
-        <div class="row boardcon"><button>삭제</button></div>
-        <div class="row boardcon"><button>수정</button></div>
+        <div class="row">{board.num}</div>
+        <div class="row">{board.subject}</div>
+        <div class="row">{board.content}</div>
+        <div class="row">{board.name}</div>
+        <div class="row">{board.views}</div>
+        <div class="row">{board.wdate}</div>
+        <div class="row">{board.passwd}</div>
+        <div class="row"><button>삭제</button></div>
+        <div class="row"><button>수정</button></div>
       </div>
     {/each}
   </div>
@@ -53,9 +53,8 @@
     min-height: 100vh;
   }
   .boardwrap {
-    box-shadow: 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flexbox;
-    border: 1px solid black;
     height: 70vh;
     width: 75vh;
     justify-content: space-between;
@@ -73,6 +72,12 @@
   }
   .row {
     height: 25px;
+  }
+  .rowhead {
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
   }
 
   .row:nth-child(1) {
