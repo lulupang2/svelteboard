@@ -3,8 +3,8 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "/home/ubuntu/.nvm/versions/node/v17.9.0/bin/yarn install"
-                sh "CI=false /home/ubuntu/.nvm/versions/node/v17.9.0/bin/yarn build"
+                sh "/usr/local/bin/yarn"                
+                sh "CI=false /usr/local/bin/yarn build"
             }
         }
         stage("Deploy") {
